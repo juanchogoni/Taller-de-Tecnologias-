@@ -1,0 +1,23 @@
+
+body {
+	margin-left: 50%;
+	background: #eee;
+    font-family: Arial;
+	font-size: 12px;
+	margin-top: 40px;
+}
+
+blockquote {
+	border: 1px solid #ccc;
+	background: #eee;
+	padding: 5px;
+	margin: 0;
+}
+
+.contenido {
+	border: 1px solid #ccc;
+	background: #fff;
+	padding: 0 30px 20px;
+	width: 480px;
+	margin-left: -240px;
+	}
