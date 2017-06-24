@@ -18,7 +18,7 @@ correspondiente a la “implementación del lado del servidor”, el formulario.
 	<body>
 	
 		<h1>Contacto</h1>
-			<form method="GET">
+			<form method="POST">
 				<fieldset>
 					<legend>Datos Personales</legend>
 					<br />
@@ -43,13 +43,27 @@ correspondiente a la “implementación del lado del servidor”, el formulario.
 					Tipo de consulta:<br />
 						<input type="radio" name="consult" value="1" checked>Común
 							<br>
-							<input type="radio" name="consult2" value="2">Urgente
+							<input type="radio" name="consult" value="2">Urgente
 							<br>
 							
 				</fieldset>
 				<br />
-				<button type="submit">Enviar</button>
+				
+				<SCRIPT languaje="JavaScript">
+					function pulsar() {
+					alert("tu consulta fue enviada con exito");
+					}
+				</SCRIPT>
+				<FORM>
+				<INPUT type="submit"
+				name="button1"
+				value="Enviar"
+				onclick="pulsar()">
+				</FORM>
+				
+				<!--<button type="submit">Enviar</button> -->
 				<button type="reset" class="reset">Borrar</button>
+				
 			</form>
 	</body>
 	
