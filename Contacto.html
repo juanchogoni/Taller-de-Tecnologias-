@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<!--
 <p>
 Una página de contacto (contacto.html) donde el visitante pueda por medio de un formulario enviar
 consultas. El formulario debe contener la siguiente información: nombre de usuario que envía la consulta
@@ -6,14 +7,15 @@ consultas. El formulario debe contener la siguiente información: nombre de usua
 texto de la consulta y la indicación de si es común o urgente.
 Cabe destacar que en esta instancia, dado que es una versión reducida que no incluye en su desarrollo lo
 correspondiente a la “implementación del lado del servidor”, el formulario. asdas
-----------------------------------------------------------------------------------------------------------------------------------</p>
+</p> -->
 
 
 <html>
 	<head>
 		<title>Contacto</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">                --------------
-		<link rel="stylesheet" href="css/estilos.css" type="text/css" />        -------------------
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">               
+		<!--  <link rel="stylesheet" href="css/estilos.css" type="text/css" /> -->      
+		<link href="css/Contacto.css" type="text/css" rel="stylesheet" /> 
 	</head>
 	<body>
 	
@@ -23,16 +25,23 @@ correspondiente a la “implementación del lado del servidor”, el formulario.
 					<legend>Datos Personales</legend>
 					<br />
 					Nombre: <input type="text" name="nombre" maxlength="30" /><br />
+					<br />
 					Edad: <input type="number" name="edad" min="18" max="70" /><br />
+					<br />
 					Mail: <input type="text" name="tel" /><br />
+					<br />
 					Teléfono: <input type="text" name="tel" /><br />
+					<br />
 					Pais:<select name="LatinoAmerica">
 							<option>Uruguay</option>
 							<option>Argentina</option>
 							<option>Brasil</option>
 							<option>Chile</option>
 							<option>Colombia</option>
+							<option>Venezuela</option>
 							<option>Peru</option>
+							<option>Bolivia</option>
+							<option>Ecuador</option>
 						</select>
 					<br />
 					<br />
@@ -49,6 +58,7 @@ correspondiente a la “implementación del lado del servidor”, el formulario.
 				</fieldset>
 				<br />
 				
+				<center>
 				<SCRIPT languaje="JavaScript">
 					function pulsar() {
 					alert("tu consulta fue enviada con exito");
@@ -60,9 +70,8 @@ correspondiente a la “implementación del lado del servidor”, el formulario.
 				value="Enviar"
 				onclick="pulsar()">
 				</FORM>
+				</center>
 				
-				<!--<button type="submit">Enviar</button> -->
-				<button type="reset" class="reset">Borrar</button>
 				
 			</form>
 	</body>

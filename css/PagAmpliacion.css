@@ -1,8 +1,9 @@
 
 body {
-	margin: auto;
+	margin-left: 2%;
+	margin-right: 2%;
 	background: #eee;
-    	font-family: Arial;
+    font-family: Arial;
 	font-size: 12px;
 	margin-top: 40px;
 	position: absolute;
@@ -21,6 +22,19 @@ blockquote {
 	border: 1px solid #ccc;
 	background: #fff;
 	padding: 0 30px 20px;
-	width: 480px;
-	margin-left: -240px;
+	width: 1150px;
+	margin-left: 8%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+}
+
+th {
+    height: 40px;
+}
+
+td {
+    height: 25px;
 }

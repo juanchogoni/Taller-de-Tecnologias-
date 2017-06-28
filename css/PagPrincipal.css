@@ -25,3 +25,15 @@ blockquote {
 
 
 	}
+	
+table {
+    border-collapse: collapse;
+    width: 70%;
+}
+
+th {
+    height: 40px;
+}
+td {
+    height: 25px;
+}
