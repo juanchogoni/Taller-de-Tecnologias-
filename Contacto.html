@@ -20,17 +20,18 @@ correspondiente a la “implementación del lado del servidor”, el formulario.
 	<body>
 	
 		<h1>Contacto</h1>
-			<form method="POST">
+			<form action="/action_page.php" method="POST">
 				<fieldset>
 					<legend>Datos Personales</legend>
 					<br />
-					Nombre: <input type="text" name="nombre" maxlength="30" /><br />
+					Nombre: <input type="text" name="nombre" maxlength="30" required="required" /><br />
 					<br />
-					Edad: <input type="number" name="edad" min="18" max="70" /><br />
+
+					Edad: <input type="number" name="edad" min="18" max="70" required/><br />
 					<br />
-					Mail: <input type="text" name="tel" /><br />
+					Mail: <input type="email" name="tel" required /><br />
 					<br />
-					Teléfono: <input type="text" name="tel" /><br />
+					Teléfono: <input type="text" name="tel" required /><br />
 					<br />
 					Pais:<select name="LatinoAmerica">
 							<option>Uruguay</option>
