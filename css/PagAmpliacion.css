@@ -1,7 +1,6 @@
 
 body {
-	margin-left: 2%;
-	margin-right: 2%;
+	width: 100%;
 	background: #eee;
     font-family: Arial;
 	font-size: 12px;
@@ -22,8 +21,8 @@ blockquote {
 	border: 1px solid #ccc;
 	background: #fff;
 	padding: 0 30px 20px;
-	width: 1150px;
-	margin-left: 8%;
+	width: 80%;
+	
 }
 
 table {
@@ -38,3 +37,4 @@ th {
 td {
     height: 25px;
 }
+
