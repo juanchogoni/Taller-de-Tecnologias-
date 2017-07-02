@@ -21,8 +21,14 @@ blockquote {
 	border: 1px solid #ccc;
 	background: #fff;
 	padding: 0 30px 20px;
+<<<<<<< HEAD
 	width: 80%;
 	
+=======
+	width: 1150px;
+	margin-left: 8%;
+	margin-right: 8%;
+>>>>>>> 3ec6be6039317cebd3d15cd9a4d3a4943d2b8ff9
 }
 
 table {
