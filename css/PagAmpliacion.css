@@ -1,7 +1,7 @@
 
 body {
 	width: 100%;
-	background: #eee;
+	background: #F6FB62;
     font-family: Arial;
 	font-size: 12px;
 	margin-top: 40px;
@@ -18,17 +18,13 @@ blockquote {
 }
 
 .contenido {
-	border: 1px solid #ccc;
-	background: #fff;
+	border: 0px solid #ccc;
+	background: #F6FB62;
 	padding: 0 30px 20px;
-<<<<<<< HEAD
 	width: 80%;
-	
-=======
 	width: 1150px;
 	margin-left: 8%;
 	margin-right: 8%;
->>>>>>> 3ec6be6039317cebd3d15cd9a4d3a4943d2b8ff9
 }
 
 table {
@@ -43,4 +39,24 @@ th {
 td {
     height: 25px;
 }
-
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li a {
+	float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
