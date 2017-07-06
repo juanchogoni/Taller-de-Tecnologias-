@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<!--
+<p>
+Una página de contacto (contacto.html) donde el visitante pueda por medio de un formulario enviar
+consultas. El formulario debe contener la siguiente información: nombre de usuario que envía la consulta
+(máximo 30 caracteres), edad (de 18 a 70), mail, teléfono, país (elegir de una lista con al menos 5 países),
+texto de la consulta y la indicación de si es común o urgente.
+Cabe destacar que en esta instancia, dado que es una versión reducida que no incluye en su desarrollo lo
+correspondiente a la “implementación del lado del servidor”, el formulario. asdas
+</p> -->
+
+
+<html>
+	<head>
+		<title>Contacto</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">               
+		<!--  <link rel="stylesheet" href="css/estilos.css" type="text/css" /> -->      
+		<link href="css/Contacto.css" type="text/css" rel="stylesheet" /> 
+	</head>
+	<body>
+	
+		<h1>Contacto</h1>
+			<form action="/action_page.php" method="POST">
+				<fieldset>
+					<legend>Datos Personales</legend>
+					<br />
+					Nombre: <input type="text" name="nombre" maxlength="30" required="required" /><br />
+					<br />
+
+					Edad: <input type="number" name="edad" min="18" max="70" required/><br />
+					<br />
+					Mail: <input type="email" name="tel" required /><br />
+					<br />
+					Teléfono: <input type="text" name="tel" required /><br />
+					<br />
+					Pais:<select name="LatinoAmerica">
+							<option>Uruguay</option>
+							<option>Argentina</option>
+							<option>Brasil</option>
+							<option>Chile</option>
+							<option>Colombia</option>
+							<option>Venezuela</option>
+							<option>Peru</option>
+							<option>Bolivia</option>
+							<option>Ecuador</option>
+						</select>
+					<br />
+					<br />
+						Su mensaje:<br />
+						<textarea name="otro" maxlength="200"></textarea>
+					<br />						
+					<br />	
+					Tipo de consulta:<br />
+						<input type="radio" name="consult" value="1" checked>Común
+							<br>
+							<input type="radio" name="consult" value="2">Urgente
+							<br>
+							
+				</fieldset>
+				<br />
+				
+				<center>
+				<SCRIPT languaje="JavaScript">
+					function pulsar() {
+					alert("tu consulta fue enviada con exito");
+					}
+				</SCRIPT>
+				<FORM>
+				<INPUT type="submit"
+				name="button1"
+				value="Enviar"
+				onclick="pulsar()">
+				</FORM>
+				</center>
+				
+				
+			</form>
+	</body>
+	
+	
+	
+	
+	
+	
+	

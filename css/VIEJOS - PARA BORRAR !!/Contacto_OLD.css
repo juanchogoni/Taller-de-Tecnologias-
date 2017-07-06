@@ -1,0 +1,45 @@
+body {
+	margin-left: 2%;
+	background: #eee;
+    font-family: Arial;
+	font-size: 12px;
+	margin-top: 40px;
+}
+
+blockquote {
+	border: 1px solid #ccc;
+	background: #eee;
+	padding: 5px;
+	margin: 0;
+}
+
+.contenido {
+	border: 1px solid #ccc;
+	background: #F6FB62;
+	padding: 0 30px 20px;
+	width: 700px;
+	margin-left: 10%px;
+}
+
+h1 {
+    font-family: Georgia;
+    font-weight: normal;    
+	font-size: 22px;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 14px;
+}
+	
+.button1 {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+	

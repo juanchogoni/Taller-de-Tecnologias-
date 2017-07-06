@@ -1,39 +1,64 @@
 <!DOCTYPE HTML>
-<!--
-<p>
-Una página de contacto (contacto.html) donde el visitante pueda por medio de un formulario enviar
-consultas. El formulario debe contener la siguiente información: nombre de usuario que envía la consulta
-(máximo 30 caracteres), edad (de 18 a 70), mail, teléfono, país (elegir de una lista con al menos 5 países),
-texto de la consulta y la indicación de si es común o urgente.
-Cabe destacar que en esta instancia, dado que es una versión reducida que no incluye en su desarrollo lo
-correspondiente a la “implementación del lado del servidor”, el formulario. asdas
-</p> -->
-
 
 <html>
 	<head>
-		<title>Contacto</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">               
-		<!--  <link rel="stylesheet" href="css/estilos.css" type="text/css" /> -->      
-		<link href="css/Contacto.css" type="text/css" rel="stylesheet" /> 
+		<link type="text/css" href="css/Contacto.css" rel="stylesheet">
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				
+				$("form").submit(function(e){
+					e.preventDefault();
+					
+					if($("#nom").val().length > 5){
+						alert("Intento de envío de formulario");
+					} else {
+						alert("Debe tener un nombre mayor a 5 letras");
+					}
+				});
+				
+				$("input, textarea").focus(function(){
+					$(this).css("background-color", "#ccc");
+				}).blur(function(){
+					$(this).css("background-color", "#fff");
+				});
+			
+				$("#cambiar").click(function(){
+					if("rgb(255, 0, 0)" == $("body").css("background-color")) {
+						$("body").css("background-color", "yellow");
+					} else {
+						$("body").css("background-color", "red");
+					}
+				});
+			});		
+		</script>
 	</head>
 	<body>
-	
-		<h1>Contacto</h1>
-			<form action="/action_page.php" method="POST">
-				<fieldset>
-					<legend>Datos Personales</legend>
-					<br />
-					Nombre: <input type="text" name="nombre" maxlength="30" required="required" /><br />
-					<br />
+		<div class="contenido">
+		<ul>
+  		<li><a  href="file:///Users/ignaciorodriguez/Desktop/Taller-de-Tecnologias-/PagPrincipal.html">Principal</a></li>
+  		<li><a  href="file:///Users/ignaciorodriguez/Desktop/Taller-de-Tecnologias-/Ampliacion.html">Ampliacion</a></li>
+  		<li><a  href="file:///Users/ignaciorodriguez/Desktop/Taller-de-Tecnologias-/contacto_definitivo.html">Contacto</a></li>
+	  	</ul>
 
-					Edad: <input type="number" name="edad" min="18" max="70" required/><br />
-					<br />
-					Mail: <input type="email" name="tel" required /><br />
-					<br />
-					Teléfono: <input type="text" name="tel" required /><br />
-					<br />
-					Pais:<select name="LatinoAmerica">
+		<form action="#" method="post">
+		
+				<h1>Formulario de Contacto </h1>
+			
+				<span class="etiqueta">Nombre</span><input type="text" id="nom" placeholder="Nombre" required="required">
+				</br>
+				</br>
+				<span class="etiqueta">Edad</span><input type="number" id="edad" min="18" max="70"/>
+				</br>
+				</br>
+				<span class="etiqueta">Mail</span><input type="text" id="mail" placeholder="Mail" required="required">
+				</br>
+				</br>
+				<span class="etiqueta">Teléfono</span><input type="text" id="teléfono" placeholder="teléfono" required="required">
+				</br>
+				</br>
+				
+				Pais:<select name="LatinoAmerica">
 							<option>Uruguay</option>
 							<option>Argentina</option>
 							<option>Brasil</option>
@@ -44,42 +69,23 @@ correspondiente a la “implementación del lado del servidor”, el formulario.
 							<option>Bolivia</option>
 							<option>Ecuador</option>
 						</select>
-					<br />
-					<br />
-						Su mensaje:<br />
-						<textarea name="otro" maxlength="200"></textarea>
-					<br />						
-					<br />	
-					Tipo de consulta:<br />
+				</br>
+				</br>
+				Su Mensaje  </br> <textarea rows="5" type="checkbox" maxlength="200" id="comentarios"></textarea>
+				</br>
+				</br>
+				Tipo de consulta:<br />
 						<input type="radio" name="consult" value="1" checked>Común
 							<br>
 							<input type="radio" name="consult" value="2">Urgente
-							<br>
-							
-				</fieldset>
-				<br />
 				
-				<center>
-				<SCRIPT languaje="JavaScript">
-					function pulsar() {
-					alert("tu consulta fue enviada con exito");
-					}
-				</SCRIPT>
-				<FORM>
-				<INPUT type="submit"
-				name="button1"
-				value="Enviar"
-				onclick="pulsar()">
-				</FORM>
-				</center>
+				</br>				
+				</br>
 				
+			<button type="submit"><img src="img/btnenviar2.png" alt="boton" width="100%"></button>
+			
 				
-			</form>
+		</form>
+		<div class="contenido">
 	</body>
-	
-	
-	
-	
-	
-	
-	
+</html>

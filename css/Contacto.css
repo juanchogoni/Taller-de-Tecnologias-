@@ -1,45 +1,48 @@
 body {
+	background: #F6FB62;
+	width: 80%;
+	margin-top: 40px;
 	margin-left: 2%;
-	background: #eee;
+	margin-right: 2%;
+	background: #F6FB62;
     font-family: Arial;
 	font-size: 12px;
-	margin-top: 40px;
 }
-
-blockquote {
-	border: 1px solid #ccc;
-	background: #eee;
-	padding: 5px;
-	margin: 0;
-}
-
 .contenido {
-	border: 1px solid #ccc;
+	border: 0px solid #ccc;
 	background: #F6FB62;
 	padding: 0 30px 20px;
-	width: 700px;
-	margin-left: 10%px;
+	width: 1100px;
+	margin-left: 8%;
+	margin-right: 8%;
+	}	
+
+form label {
+	display: block;
 }
 
-h1 {
-    font-family: Georgia;
-    font-weight: normal;    
-	font-size: 22px;
+form label span {
+	display: inline-block;
+	width: 150px;
 }
-
-h2 {
-    font-weight: normal;
-    font-size: 14px;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
-	
-.button1 {
-    background-color: #4CAF50; /* Verde */
-    border: none;
+li a {
+	float: left;
+    display: block;
     color: white;
-    padding: 15px 32px;
     text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
 }
-	
+li a:hover {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
