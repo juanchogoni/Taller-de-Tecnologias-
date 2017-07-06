@@ -2,7 +2,7 @@
 body {
 	width: 100%;
 	background: #F6FB62;
-    font-family: Arial;
+    font-family: Times New Roman;
 	font-size: 12px;
 	margin-top: 40px;
 	position: absolute;
@@ -21,6 +21,8 @@ blockquote {
 	border: 0px solid #ccc;
 	background: #F6FB62;
 	padding: 0 30px 20px;
+	font-family: Times New Roman;
+	font-size: 12px;
 	width: 80%;
 	width: 1150px;
 	margin-left: 8%;
