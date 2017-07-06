@@ -3,7 +3,35 @@
 <html>
 	<head>
 		<link type="text/css" href="css/Contacto.css" rel="stylesheet">
-
+		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+	<!--	<script>
+			$(document).ready(function(){
+				
+				$("form").submit(function(e){
+					e.preventDefault();
+					
+					if($("#nom").val().length > 5){
+						alert("Intento de envío de formulario");
+					} else {
+						alert("Debe tener un nombre mayor a 5 letras");
+					}
+				});
+				
+				$("input, textarea").focus(function(){
+					$(this).css("background-color", "#ccc");
+				}).blur(function(){
+					$(this).css("background-color", "#fff");
+				});
+			
+				$("#cambiar").click(function(){
+					if("rgb(255, 0, 0)" == $("body").css("background-color")) {
+						$("body").css("background-color", "yellow");
+					} else {
+						$("body").css("background-color", "red");
+					}
+				});
+			});		
+		</script>   -->
 	</head>
 	<body>
 		<div class="redes">
@@ -25,7 +53,7 @@
 				<span class="etiqueta">Nombre</span><input type="text" id="nom" placeholder="Nombre" required="required">
 				</br>
 				</br>
-				<span class="etiqueta">Edad</span><input type="number" id="edad" min="18" max="70" required="required"/>
+				<span class="etiqueta">Edad</span><input type="number" id="edad" min="18" max="70"/>
 				</br>
 				</br>
 				<span class="etiqueta">Mail</span><input type="text" id="mail" placeholder="Mail" required="required">
@@ -48,7 +76,7 @@
 						</select>
 				</br>
 				</br>
-				Su Mensaje  </br> <textarea rows="5" type="checkbox" maxlength="200" id="comentarios"required="required ></textarea>
+				Su Mensaje  </br> <textarea rows="5" type="checkbox" maxlength="200" id="comentarios"></textarea>
 				</br>
 				</br>
 				Tipo de consulta:<br />
@@ -59,7 +87,7 @@
 				</br>				
 				</br>
 				
-			<button type="submit"><img src="img/btnenviar2.png" alt="boton" width="100%" ></button>
+			<button type="submit"><img src="img/btnenviar2.png" alt="boton" width="100%"></button>
 			
 				
 		</form>
