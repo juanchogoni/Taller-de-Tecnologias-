@@ -27,6 +27,7 @@ blockquote {
 	width: 1150px;
 	margin-left: 8%;
 	margin-right: 8%;
+	
 }
 
 table {
@@ -62,3 +63,18 @@ li a:hover {
 .active {
     background-color: #4CAF50;
 }
+
+
+.redes {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.redes img {
+    height: 48px;
+    width: auto;
+}
+
+
+
